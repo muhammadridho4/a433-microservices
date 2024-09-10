@@ -4,16 +4,14 @@ services:
   item-app:
     image: ghcr/muhammadridho4/item-app:v1
     ports:
-      -80:8080
+      - 80:8080
     depends_on:
-      item-db
+      - item-db
     restart: always
-  
   item-db:
     image:mongo:3
     volumes:
-      -app-bd:/data/db
+      - app-bd:/data/db
     restart: always
-
 volumes:
   app-db:
