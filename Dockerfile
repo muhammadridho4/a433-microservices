@@ -1,7 +1,5 @@
 FROM node:14
 
-LABEL org.opencontainers.image.source https://github.com/muhammadridho4/a433-microservices
-
 WORKDIR /app
 
 COPY . .
